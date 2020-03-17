@@ -34,7 +34,7 @@ namespace AuthenticationUtility
             // Get token object. test child change.
             AuthenticationResult authenticationResult = authenticationContext.AcquireToken(aadResource, aadClientAppId, new UserCredential(username, password));
 
-            // Create and get JWT token
+            // Create and get JWT token, test change no conflict
             return authenticationResult.CreateAuthorizationHeader();
         }
 
