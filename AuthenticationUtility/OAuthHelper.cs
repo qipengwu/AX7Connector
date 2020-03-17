@@ -27,14 +27,14 @@ namespace AuthenticationUtility
 
             AuthenticationContext authenticationContext = new AuthenticationContext(aadTenant);
 
-            // OAuth through username and password. test git upstream merge from parent.
+            // OAuth through username and password. test git upstream merge conflict from parent.
             string username = ClientConfiguration.Default.UserName;
             string password = ClientConfiguration.Default.Password;
 
             // Get token object
             AuthenticationResult authenticationResult = authenticationContext.AcquireToken(aadResource, aadClientAppId, new UserCredential(username, password));
 
-            // Create and get JWT token
+            // Create and get JWT token, test change no conflict
             return authenticationResult.CreateAuthorizationHeader();
         }
 
