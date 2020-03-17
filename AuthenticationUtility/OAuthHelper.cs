@@ -27,7 +27,7 @@ namespace AuthenticationUtility
 
             AuthenticationContext authenticationContext = new AuthenticationContext(aadTenant);
 
-            // OAuth through username and password. test git upstream merge conflict from parent.
+            // OAuth through username and password. test git upstream merge conflict from parent II.
             string username = ClientConfiguration.Default.UserName;
             string password = ClientConfiguration.Default.Password;
 
