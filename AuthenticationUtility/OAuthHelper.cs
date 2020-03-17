@@ -27,11 +27,11 @@ namespace AuthenticationUtility
 
             AuthenticationContext authenticationContext = new AuthenticationContext(aadTenant);
 
-            // OAuth through username and password.
+            // OAuth through username and password. test merge child
             string username = ClientConfiguration.Default.UserName;
             string password = ClientConfiguration.Default.Password;
 
-            // Get token object
+            // Get token object. test child change.
             AuthenticationResult authenticationResult = authenticationContext.AcquireToken(aadResource, aadClientAppId, new UserCredential(username, password));
 
             // Create and get JWT token
